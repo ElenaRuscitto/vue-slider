@@ -57,6 +57,8 @@ createApp ({
       } else if  (this.counter < 0) {
         this.counter = this.images.length -1
       }
+
+  
     },
 
     // autoplay
@@ -64,10 +66,9 @@ createApp ({
       setInterval (()=> {
         // riga 63 e 65 aggiunte per far bloccare autoplay con mouse sopra/fuori
         if (this.isAutoActive) {
-          this.nextPrev(true)
+          this.nextPrev(this.isChangeDirection)
         }
 
-        this.isChangeDirection 
       }, 1000 )
     }
   },
