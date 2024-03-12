@@ -12,3 +12,4 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 4- al doppio click sullo slider cambia la direzione dell’autoplay
 
 ## SVOLGIMENTO
+1. inserisco le immagini in un array di oggetti
