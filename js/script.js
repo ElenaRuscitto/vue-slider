@@ -38,7 +38,8 @@ createApp ({
         },
       ],
 
-      counter: 3
+      counter: 3,
+      isAutoActive: true
     }
   },
 
@@ -54,7 +55,21 @@ createApp ({
       }else if  (this.counter < 0){
         this.counter = this.images.length -1
       }
+    },
+
+    // autoplay
+    autoPlay(){
+      setInterval (()=> {
+        // riga 63 e 65 aggiunte per far bloccare autoplay con mouse sopra/fuori
+        if(this.isAutoActive) {
+          this.nextPrev(true)
+        }
+      }, 1000 )
     }
   },
+
+  mounted () {
+    this.autoPlay ()
+  }
 
 }).mount('#app')

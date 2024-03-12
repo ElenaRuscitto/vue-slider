@@ -21,4 +21,7 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 7. al premere di Next/PRev, le immagini  girano 
 - BONUS
 8. al clic dell'utente su una thumb l'immagine si si accende l'immagine corrispondente
-9. inserisco l’autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente
+9. condizione per far lopp delle immagini cliccando l'ultima/prima img
+10. inserisco l’autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente
+11. con @mouseenter se vado sopra con il mos su img si ferma
+12. con @mouseleave se non vado sopra con il mos su img si ferma
