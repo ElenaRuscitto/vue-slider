@@ -39,7 +39,8 @@ createApp ({
       ],
 
       counter: 3,
-      isAutoActive: true
+      isAutoActive: true,
+      isChangeDirection: true,
     }
   },
 
@@ -47,23 +48,26 @@ createApp ({
     // al click del btn le immagini cambiano
     nextPrev(isNext) {
 
-      isNext ? this.counter++ : this.counter--;
+      isNext ? this.counter++ : this.counter--
 
       // condizione per far lopp delle immagini cliccando l'ultima/prima img
-      if (this.counter === this.images.length){
-        this.counter = 0; 
-      }else if  (this.counter < 0){
+      if (this.counter === this.images.length) {
+        this.counter = 0 
+
+      } else if  (this.counter < 0) {
         this.counter = this.images.length -1
       }
     },
 
     // autoplay
-    autoPlay(){
+    autoPlay() {
       setInterval (()=> {
         // riga 63 e 65 aggiunte per far bloccare autoplay con mouse sopra/fuori
-        if(this.isAutoActive) {
+        if (this.isAutoActive) {
           this.nextPrev(true)
         }
+
+        this.isChangeDirection 
       }, 1000 )
     }
   },
@@ -73,3 +77,5 @@ createApp ({
   }
 
 }).mount('#app')
+
+dblclick

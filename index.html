@@ -35,11 +35,21 @@
                 </div>
 
                 <div class="col-12 p-5">
-                    <div class="my-carousel-container d-flex flex-column px-5" id="my-carousel" @mouseenter="isAutoActive = false" @mouseleave="isAutoActive = true">
+                    <div 
+                    class="my-carousel-container d-flex flex-column px-5" 
+                    id="my-carousel" 
+                    @mouseenter="isAutoActive = false" 
+                    @mouseleave="isAutoActive = true"
+                    @dblclick= "isChangeDirection = !isChangeDirection">
+                    
                         <div class="my-carousel-images">
 <!-- IMMAGINI GRANDI -->
                             <div class="my-carousel-item ">
-                                <img class="img-fluid" :src="images[counter].url" :alt="images.title">
+                                <img 
+                                class="img-fluid" 
+                                :src="images[counter].url" 
+                                :alt="images.title">
+
                                 <div class="item-description px-3">
                                     <h2> {{images[counter].title}}</h2>
                                     <p>{{images[counter].description}}</p>
@@ -50,19 +60,34 @@
 
                         </div>
                         <div class="my-thumbnails position-relative">
+
                             <!-- prev -->
-                            <div @click="nextPrev(false)"  class="my-previous position-absolute">
+                            <div 
+                            @click="nextPrev(false)"  
+                            class="my-previous position-absolute">
+
                                 <span class="my-prev-hook"></span>
                             </div>
 <!-- IMMAGINI PICCOLE -->
-                            <div v-for ='(image, indice) in images' class="my-thumbnail" :class="{'active': indice === counter}" @click="counter = indice">
-                                <img class="img-fluid" :src="image.url" :alt="image.title">
+                            <div 
+                            v-for ='(image, indice) in images' 
+                            class="my-thumbnail" 
+                            :class="{'active': indice === counter}" 
+                            @click="counter = indice">
+
+                                <img 
+                                class="img-fluid" 
+                                :src="image.url" 
+                                :alt="image.title">
                             </div>
 
                            
 
                             <!-- next -->
-                            <div @click="nextPrev(true)"  class="my-next position-absolute">
+                            <div 
+                            @click="nextPrev(true)"  
+                            class="my-next position-absolute">
+
                                 <span class="my-next-hook"></span>
                             </div>
                         </div>

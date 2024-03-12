@@ -25,3 +25,4 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 10. inserisco l’autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente
 11. con @mouseenter se vado sopra con il mos su img si ferma
 12. con @mouseleave se non vado sopra con il mos su img si ferma
+13. al doppio click sullo slider cambia la direzione dell’autoplay
