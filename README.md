@@ -18,4 +18,6 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 4. metto il titolo e la descrizione  da array
 5. mostro l'immagine attiva in base al contatore
 6. aggiungo la classe "active" alle thumb in base al'indice delle image
-7. al premere di Next/PRev, le immagini grandi girano 
+7. al premere di Next/PRev, le immagini  girano 
+- BONUS
+8. al clic dell'utente su una thumb l'immagine si si accende l'immagine corrispondente
