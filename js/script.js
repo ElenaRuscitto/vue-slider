@@ -38,7 +38,7 @@ createApp ({
         },
       ],
 
-      counter: 0
+      counter: 3
     }
   }
 }).mount('#app')

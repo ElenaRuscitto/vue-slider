@@ -13,3 +13,7 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 
 ## SVOLGIMENTO
 1. inserisco le immagini in un array di oggetti
+2. creo un counter
+3. inserisco le :url dinamicamente
+4. metto il titolo e la descrizione  da array
+5. mostro l'immagine attiva in base al contatore
