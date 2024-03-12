@@ -17,3 +17,5 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 3. inserisco le :url dinamicamente
 4. metto il titolo e la descrizione  da array
 5. mostro l'immagine attiva in base al contatore
+6. aggiungo la classe "active" alle thumb in base al'indice delle image
+7. al premere di Next/PRev, le immagini grandi girano 

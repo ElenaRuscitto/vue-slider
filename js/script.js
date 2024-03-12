@@ -40,5 +40,14 @@ createApp ({
 
       counter: 3
     }
-  }
+  },
+
+  methods: {
+    // al click del btn le immagini cambiano
+    nextPrev(isNext) {
+
+      isNext ? this.counter++ : this.counter--;
+    }
+  },
+
 }).mount('#app')
